@@ -41,7 +41,9 @@ if(movingbox.isTouching(surface1) && movingbox.bounceOff(surface1)){
 
 if(movingbox.isTouching(surface2) && movingbox.bounceOff(surface2)){
     movingbox.shapeColor="green";
-    music.play();
+    music.stop();
+    movingbox.velocityX=0;
+    movingbox.velocityY=0;
 }
 if(movingbox.isTouching(surface3) && movingbox.bounceOff(surface3)){
     movingbox.shapeColor="blue";
@@ -50,6 +52,13 @@ if(movingbox.isTouching(surface3) && movingbox.bounceOff(surface3)){
     if(movingbox.isTouching(surface4) && movingbox.bounceOff(surface4)){
         movingbox.shapeColor="yellow";
         music.play();
-    }       
+    }    
+    
+    
+
+
+
+
+
 drawSprites();
 }
